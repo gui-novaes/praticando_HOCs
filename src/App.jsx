@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Input from './components/Input.tsx';
+import Render from './components/RenderTest.tsx';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
 
         <br />
         <Input></Input>
+
+        <Render render={(mouseState) => <Input>{mouseState.name}</Input>} />
       </header>
     </div>
   );
